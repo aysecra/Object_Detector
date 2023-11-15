@@ -31,10 +31,10 @@ namespace ObjectDetector.Component
                 DetectorManager.Instance.AddDetectableObject(_currDetectableObjectData);
             }
         }
-
+        
         private void OnDisable()
         {
-            if(!gameObject.scene.isLoaded) return;
+            if (!gameObject.scene.isLoaded) return;
 
             if (meshFilter != null)
             {
